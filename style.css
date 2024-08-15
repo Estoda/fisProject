@@ -1,0 +1,291 @@
+:root {
+  --main-color: rgb(124, 189, 213);
+  --back-color: rgb(29, 29, 29);
+}
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--back-color);
+  padding-top: 105px;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  background-color: var(--back-color);
+  padding: 30px 20px;
+  top: 0;
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: hidden;
+  position: fixed;
+  z-index: 555555;
+  box-shadow: -9px -5px 12px 2px #848484;
+}
+.sec {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.sec a {
+  background-color: var(--main-color);
+  width: 24%;
+  height: 100%;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 30px;
+  color: var(--back-color);
+  padding-top: 5px;
+  border: 1px solid var(--main-color);
+  transition: 0.3s;
+  border-radius: 50px;
+}
+.sec a:hover {
+  color: var(--main-color);
+  background-color: var(--back-color);
+}
+
+.home {
+  font-size: 40px;
+  font-weight: bold;
+}
+.home i {
+  cursor: pointer;
+  color: var(--main-color);
+  transition-duration: 0.3s;
+}
+.home i:hover {
+  transform: scale(1.3);
+}
+main {
+  color: white;
+  width: 100%;
+  margin: 50px 0 100px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main .all {
+  width: 49%;
+  padding: 20px;
+  align-self: center;
+}
+main .intro {
+  font-weight: bold;
+  font-size: 40px;
+}
+main .img {
+  height: 340px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+.img div {
+  overflow: hidden;
+  width: calc(97%);
+  border-radius: 20px;
+  margin-top: 20px;
+  box-shadow: 4px 7px 9px 0px rgba(255, 255, 255, 0.211);
+  animation-name: an;
+  animation-duration: 0.5s;
+  animation-timing-function: cubic-bezier(0.7, 0.89, 0.5, 0.16);
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+@keyframes an {
+  25% {
+    margin-top: 20px;
+  }
+  50% {
+    margin-top: 16px;
+  }
+  75% {
+    margin-top: 14px;
+  }
+  100% {
+    margin-top: 20px;
+  }
+}
+.img div img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.intro .one {
+  text-align: center;
+  width: 100%;
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: 5px;
+  text-align: center;
+}
+.intro .two {
+  width: 100%;
+  margin-top: -8px;
+  text-align: center;
+  font-size: 30px;
+  color: gray;
+}
+.intro .logo {
+  width: 180px;
+  height: 180px;
+  background-color: #34e563;
+  border-radius: 8px;
+}
+.intro .logo img {
+  width: 180px;
+  height: 180px;
+  border-radius: 8px;
+}
+.content {
+  width: 90%;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.content .dollar {
+  border-bottom-right-radius: 6px;
+}
+.content div {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 20px;
+  justify-content: space-between;
+}
+.one p {
+  direction: rtl;
+  text-size-adjust: 20;
+  width: 100%;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  border: 0;
+}
+.sports .one,
+.dollar .one,
+.syasa .one,
+.egypt .one {
+  width: 100%;
+  height: 150px;
+  text-align: center;
+  border: 0;
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+}
+.sports .two,
+.dollar .two,
+.syasa .two,
+.egypt .two {
+  width: 49%;
+  border-radius: 10px;
+}
+.sports .two {
+  background-image: url("photos/large.jpg");
+}
+.dollar .two {
+  background-image: url("photos/dollar.jpg");
+}
+.syasa .two {
+  background-image: url("photos/syasa.jpg");
+}
+.egypt .two {
+  background-image: url("photos/egypt.jpg");
+}
+.sports .three,
+.dollar .three,
+.syasa .three,
+.egypt .three {
+  width: 49%;
+}
+.three p {
+  direction: rtl;
+  text-size-adjust: 20;
+  width: 100%;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.4;
+  text-align: center;
+  color: rgb(148, 148, 148);
+  border: 0;
+}
+footer {
+  width: 100%;
+  height: 200px;
+  margin-top: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--main-color);
+}
+footer .c {
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--main-color);
+  font-weight: bold;
+}
+footer .c p {
+  background-color: var(--back-color);
+  border-radius: 50px;
+  padding: 0px 10px;
+  margin: 0;
+}
+footer .hh {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .hh > div {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.hh a {
+  text-decoration: none;
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 30px;
+  background-color: var(--back-color);
+  padding: 10px 20px;
+  border: 1px solid var(--main-color);
+  border-radius: 50px;
+  transition: 0.3s;
+}
+.hh a:hover {
+  border-color: white;
+  color: white;
+}
+footer .hh div {
+  display: flex;
+  justify-content: center;
+}
